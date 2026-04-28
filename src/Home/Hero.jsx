@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import neon from '../assets/nplat.jpg';
 
 function Hero() {
@@ -14,8 +15,8 @@ function Hero() {
         </p>
 
         <div className="buttons">
-          <button className="primary">VIEW PROJECTS</button>
-          <button className="secondary">CONTACT ME</button>
+       <Link to="/projects"> <button className="primary">VIEW PROJECTS</button></Link>  
+        <Link to="/contact"><button className="secondary">CONTACT ME</button></Link>  
         </div>
       </div>
 
